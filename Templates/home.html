@@ -1,0 +1,27 @@
+<html>
+    <body bgcolor="pink" backgrond="download1.jfif">
+
+        <center>
+
+        <h1> WELCOME TO WEIGHT MENTOR </h1><br>
+    
+        <form method="POST", action="home.html">
+           <b> Height  :  <input type="text", name='a', placeholder="enter your Height"> <br><br>
+               Gender  : <select name="b" id="gender">
+                    <option value="">-Select Gender-</option>
+                    <option value=1>Male</option>
+                    <option value=0>Female</option>
+                </select>  <br><br>
+                Enter your Actual weight  :  <input type="text", name='d', placeholder="enter your weight"> <br><br>
+             
+             <br><br><p> The prdicted wieght : <textarea id="text" name='c', rows="10" cols="50" values="0">{{data}}{{w1}} </textarea></p><br><br>
+            <input type="submit" , value='predict'>
+
+        </form>
+       
+        <p>?Press the following button to know your BMI status.</p><br><br>
+       <a href="{{ url_for('bmi') }}">BMI</a>
+    </center>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <body bgcolor=#d4a3ae background="download2">
+
+        <center>
+
+        <h1> BMI PREDICTION </h1><br>
+        
+        <form method="POST", action="BMR.html">
+           <b> <p>
+               Based on your weight,Height and gender your BMI is {{dat}} .As per the BMI value you are the 
+               
+               {% if dat==0 %}
+                {Extreamily week }
+               {% elif dat==1 %}
+                 {{week}}
+                {% elif dat==2 %}
+                {Normal}
+                {% elif dat==3 %}
+                {Over weight}
+               {% elif dat==4 %}
+                {obsity}
+                {% elif dat==5 %}
+                {Etream obsity}
+        
+               {% endif %} .
+                          
+                  </p>
+            <p>?Press the following button to know your BMR status.</p>
+           
+            <a href="{{ url_for('bmr1') }}">BMR</a>
+        </form>
+    </center>
+
+    </body>
+</html>
